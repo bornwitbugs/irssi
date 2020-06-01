@@ -185,6 +185,7 @@ server_connect_copy_skeleton(SERVER_CONNECT_REC *src, int connect_info)
 
 		dest->use_tls = src->use_tls;
 		dest->tls_cert = g_strdup(src->tls_cert);
+        dest->tls_pass = g_strdup(src->tls_pass);
 		dest->tls_pkey = g_strdup(src->tls_pkey);
 		dest->tls_verify = src->tls_verify;
 		dest->tls_cafile = g_strdup(src->tls_cafile);
